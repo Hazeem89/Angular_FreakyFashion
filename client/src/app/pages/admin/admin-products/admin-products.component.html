@@ -1,0 +1,33 @@
+<div class="parent">
+    <div class="container">
+        <h3>Produkter</h3>
+        <button class="button">
+            <a routerLink="/admin/products/new">Ny produkt</a>
+        </button>
+    </div>
+</div>
+
+<div style="justify-items: center">
+    <table>
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>Beskrivning</th>
+                <th>SKU</th>
+                <th>Märke</th>
+                <th>Pris</th>
+                <th>Antal sålda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.Name }}</td>
+                <td>{{ product.Description }}</td>
+                <td>{{ product.SKU }}</td>
+                <td>{{ product.Brand }}</td>
+                <td>{{ product.Price }} SEK</td>
+                <td>{{ product.totalSales }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

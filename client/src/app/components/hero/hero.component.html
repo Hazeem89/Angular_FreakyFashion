@@ -1,0 +1,11 @@
+<section class="hero">
+    <ng-container *ngIf="topProduct">
+        <div class="hero-card">
+            <img [src]="topProduct.Image" [alt]="topProduct.Name" />
+        </div>
+        <div class="hero-text">
+            <h3>Unveil Your Style: Where Fashion Meets Confidence</h3>
+            <p>Discover the latest trends, timeless classics, and unique pieces that speak to your individuality. Elevate your wardrobe with our curated collections designed to inspire and empower every look.</p>
+        </div>
+    </ng-container>
+</section>

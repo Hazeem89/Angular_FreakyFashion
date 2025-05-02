@@ -1,0 +1,20 @@
+<section class="products">
+    <ng-container *ngIf="filteredProducts.length > 0; else noResults">
+        <div class="product" *ngFor="let product of filteredProducts">
+            <a [routerLink]="['/products', product.id, product.Name]">
+                <img [src]="product.Image" [alt]="product.Name"/>
+            </a>
+            <span class="price">{{product.Price}} SEK</span>
+            <span class="name">{{product.Name}}</span>
+            <span class="brand">{{product.Brand}}</span>
+            <span class="heart-icon">
+                <fa-icon [icon]="faHeart"></fa-icon>
+            </span>
+        </div>
+    </ng-container>
+    <ng-template #noResults>
+        <div class="no-results">
+            <h2>Inga produkter hittades för sökningen: "{{query}}"</h2>
+        </div>
+    </ng-template>
+</section>

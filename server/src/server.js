@@ -1,10 +1,12 @@
 import express from "express";
 import Database from 'better-sqlite3';
+import cors from 'cors';
 
 
 const PORT = 8000;
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // Database setup with better-sqlite3

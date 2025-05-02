@@ -1,0 +1,33 @@
+<div class="header">
+    <span class="logo">
+        <a routerLink="/">
+            <img src="/assets/logo.png" alt="logo" />
+        </a>
+    </span>
+
+    <div class="header-right">
+        <span class="search-box">
+            <input
+                name="search"
+                type="text"
+                placeholder="Sök produkt..."
+                [(ngModel)]="query"
+                (keydown.enter)="handleSearch()"
+            />
+            <span class="search-icon" (click)="handleSearch()">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </span>
+        </span>
+
+        <span class="heart-icon">
+            <a routerLink="/">
+                <fa-icon [icon]="faHeart"></fa-icon>
+            </a>
+        </span>
+        <span class="cart-icon">
+            <a routerLink="/">
+                <fa-icon [icon]="faBasket"></fa-icon>
+            </a>
+        </span>
+    </div>
+</div>

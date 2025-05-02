@@ -1,0 +1,29 @@
+<ng-container *ngIf="product; else loading">
+    <div class="container">
+        <div class="product-card">
+            <img [src]="product.Image" [alt]="product.Name"/>
+            <span class="heart-icon">
+                <fa-icon [icon]="faHeart"></fa-icon>
+            </span>
+        </div>
+
+        <div class="product-info">
+            <span class="name">{{product.Name}}</span><br/>
+            <span class="brand">{{product.Brand}}</span><br/>
+            <span><br/>{{product.Description}}</span><br/><br/><br/>
+            <span class="price">{{product.Price}} SEK</span>
+            <br/><br/>
+            <button class="button">Lägg i varukorg</button>
+        </div>
+    </div>
+
+    <!-- Similar products component will be here -->
+    <app-similar-product *ngIf="product" 
+        [productName]="product.Name" 
+        [productId]="product.id">
+    </app-similar-product>
+</ng-container>
+
+<ng-template #loading>
+    Laddar...
+</ng-template>

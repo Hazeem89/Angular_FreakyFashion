@@ -1,0 +1,13 @@
+<section class="spots">
+    <ng-container *ngIf="filteredProducts.length > 0; else loading">
+        <div class="spot" *ngFor="let product of filteredProducts">
+            <a [routerLink]="['/products', product.id, product.Name]" class="product-img">
+                <img [src]="product.Image" [alt]="product.Name"/>
+                <div class="spot-text">Lorem ipsum dolor</div>
+            </a>
+        </div>
+    </ng-container>
+    <ng-template #loading>
+        <p>Loading Spots products...</p>
+    </ng-template>
+</section>

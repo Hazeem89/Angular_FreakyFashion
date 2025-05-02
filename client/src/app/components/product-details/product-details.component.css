@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.product-card img {
+    width: 97%;
+    border-radius: 10px;
+}
+
+.heart-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 24px;
+    color: tomato;
+    cursor: pointer;
+}
+
+.product-info {
+    font-size: 1rem;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.name {
+    font-size: 1.1rem;
+    color: black;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.brand {
+    color: rgb(61, 60, 60);
+    font-weight: 300;
+}
+
+.button {
+    margin: 0;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.button:hover {
+    border: 2px solid #15b8f8;
+}
+
+@media (width < 640px) {
+    .container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .product-card {
+        transition: transform 0.3s ease;
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        padding-left: 1rem;
+    }
+
+    .button {
+        width: 95%;
+    }
+}
