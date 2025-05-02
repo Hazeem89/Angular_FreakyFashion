@@ -5,6 +5,15 @@
     flex-wrap: wrap;
     width: auto;
     margin: 0 5px;
+    justify-content: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 5px;
 }
 
 .panel-default {
@@ -14,14 +23,18 @@
 }
 
 .panel-heading, .accordion-text {
-    font-family: "Balsamiq Sans";
+    text-decoration: none;
+    font-family: "Balsamiq Sans" sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: inherit;
-    background-color: #f0f0f0;
     border-radius: 5px;
 }
 
 .accordion-button {
-    font-family: "Balsamiq Sans";
+    font-family: "Balsamiq Sans" sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #f0f0f0;
     border: none;
     padding: 10px;
@@ -63,6 +76,11 @@
         flex-direction: column;
         background-color: white;
         padding-top: 10px;
+    }
+
+    .accordion {
+        flex-direction: column;
+        
     }
 
     .panel-default {

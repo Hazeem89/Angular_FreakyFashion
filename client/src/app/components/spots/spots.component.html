@@ -1,5 +1,5 @@
 <section class="spots">
-    <ng-container *ngIf="filteredProducts.length > 0; else loading">
+    <ng-container *ngIf="filteredProducts.length > 0 ; else loading">
         <div class="spot" *ngFor="let product of filteredProducts">
             <a [routerLink]="['/products', product.id, product.Name]" class="product-img">
                 <img [src]="product.Image" [alt]="product.Name"/>
