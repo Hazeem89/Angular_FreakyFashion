@@ -1,4 +1,4 @@
-<div class="parent">
+<div class="parent"> 
     <div class="container">
         <h3>Produkter</h3>
         <button class="button">
@@ -16,6 +16,7 @@
                 <th>Märke</th>
                 <th>Pris</th>
                 <th>Antal sålda</th>
+                <th>Åtgärder</th> <!-- New column for actions -->
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,9 @@
                 <td>{{ product.Brand }}</td>
                 <td>{{ product.Price }} SEK</td>
                 <td>{{ product.totalSales }}</td>
+                <td>
+                    <button (click)="deleteProduct(product.id)" class="delete-button">Radera</button>
+                </td>
             </tr>
         </tbody>
     </table>
