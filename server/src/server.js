@@ -49,6 +49,25 @@ app.get('/products/id/:id', (req, res) => {
   }
 });
 
+// Delete product by ID
+app.delete('/products/:id', (req, res) => {
+    const id = req.params.id;
+  
+    try {
+      const stmt = db.prepare('DELETE FROM products WHERE id = ?');
+      const result = stmt.run(id);
+  
+      if (result.changes === 0) {
+        return res.status(404).json({ error: 'Product not found' });
+      }
+  
+      res.json({ message: 'Product deleted successfully' });
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+  
+
 // Add new product
 app.post('/products', (req, res) => {
   const { Name, Price, Description, Image, Brand, SKU } = req.body;
