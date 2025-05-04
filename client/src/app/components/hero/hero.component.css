@@ -21,7 +21,9 @@
 }
 
 .hero-card img {
-    width: 100%;
+    object-fit: contain;
+    width: 70%;
+    height: auto;
     border-radius: 10px;
 }
 
