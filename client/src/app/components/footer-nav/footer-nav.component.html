@@ -1,14 +1,14 @@
 <nav>
     <div class="foot-nav">
-        <div class="accordion">
+        <div class="accordion" id="footerAccordion">
             <!-- Shopping Section -->
             <div class="accordion-item panel-default">
                 <h2 class="accordion-header panel-heading">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#shopping-panel">
+                    <button class="accordion-button" type="button" (click)="togglePanel('shopping')" [attr.aria-expanded]="expandedPanels.includes('shopping')" aria-controls="shopping-panel">
                         Shopping
                     </button>
                 </h2>
-                <div id="shopping-panel" class="accordion-collapse collapse show">
+                <div id="shopping-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('shopping')">
                     <div class="accordion-body">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -31,11 +31,11 @@
             <!-- My Pages Section -->
             <div class="accordion-item panel-default">
                 <h2 class="accordion-header panel-heading">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pages-panel">
+                    <button class="accordion-button" type="button" (click)="togglePanel('pages')" [attr.aria-expanded]="expandedPanels.includes('pages')" aria-controls="pages-panel">
                         Mina Sidor
                     </button>
                 </h2>
-                <div id="pages-panel" class="accordion-collapse collapse show">
+                <div id="pages-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('pages')">
                     <div class="accordion-body">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -52,11 +52,11 @@
             <!-- Customer Service Section -->
             <div class="accordion-item panel-default">
                 <h2 class="accordion-header panel-heading">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#service-panel">
+                    <button class="accordion-button" type="button" (click)="togglePanel('service')" [attr.aria-expanded]="expandedPanels.includes('service')" aria-controls="service-panel">
                         Kundtjänst
                     </button>
                 </h2>
-                <div id="service-panel" class="accordion-collapse collapse show">
+                <div id="service-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('service')">
                     <div class="accordion-body">
                         <ul class="nav flex-column">
                             <li class="nav-item">
