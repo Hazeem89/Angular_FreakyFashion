@@ -34,13 +34,13 @@ export class NewProductComponent {
     if (this.validateForm()) {
       this.productService.createProduct(this.product).subscribe({
         next: (response) => {
-          this.successMessage = 'Produkt skapad framgångsrikt!';
+          this.successMessage = 'Produkt skapad!✅';
           setTimeout(() => {
             this.router.navigate(['/admin/products']);
           }, 2000);
         },
         error: (error) => {
-          this.errorMessage = 'Ett fel uppstod när produkten skulle skapas';
+          this.errorMessage = '⛔Ett fel uppstod när produkten skulle skapas';
           console.error('Error creating product:', error);
         }
       });
@@ -49,27 +49,27 @@ export class NewProductComponent {
 
   private validateForm(): boolean {
     if (!this.product.Name) {
-      this.errorMessage = 'Produktnamn krävs';
+      this.errorMessage = '⛔Produktnamn krävs';
       return false;
     }
     if (!this.product.Description) {
-      this.errorMessage = 'Produktbeskrivning krävs';
+      this.errorMessage = '⛔Produktbeskrivning krävs';
       return false;
     }
     if (!this.product.Image) {
-      this.errorMessage = 'Produktbild krävs';
+      this.errorMessage = '⛔Produktbild krävs';
       return false;
     }
     if (!this.product.Brand) {
-      this.errorMessage = 'Produktmärke krävs';
+      this.errorMessage = '⛔Produktmärke krävs';
       return false;
     }
     if (!this.product.SKU) {
-      this.errorMessage = 'Produkt-SKU krävs';
+      this.errorMessage = '⛔Produkt-SKU krävs';
       return false;
     }
     if (!this.product.Price || this.product.Price <= 0) {
-      this.errorMessage = 'Giltigt pris krävs';
+      this.errorMessage = '⛔Giltigt pris krävs';
       return false;
     }
     return true;

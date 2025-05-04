@@ -34,6 +34,7 @@
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-content: center;
+
     }
 }
 
@@ -41,5 +42,10 @@
     .icons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
+
+        div {
+         text-align: center;
+        }
+        
     }
 }

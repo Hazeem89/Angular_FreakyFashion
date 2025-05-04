@@ -1,6 +1,6 @@
 <div >
     <form (ngSubmit)="onSubmit()" #productForm="ngForm" class="container">
-        <h4>Ny produkt</h4>
+        <h3>Ny produkt</h3><br>
         <div class="form-unit">
             <label for="Name">Produktnamn:</label>
             <input type="text" id="Name" name="Name"
@@ -9,13 +9,13 @@
 
         <div class="form-unit">
             <label for="Description">Beskrivning:</label>
-            <input type="text" id="Description" name="Description"
-                [(ngModel)]="product.Description" required>
+            <textarea type="text" id="Description" name="Description"
+                [(ngModel)]="product.Description" rows="5" required></textarea>
         </div>
 
         <div class="form-unit">
             <label for="Image">Bildlänk:</label>
-            <input type="text" id="Image" name="Image"
+            <input type="url" id="Image" name="Image"
                 [(ngModel)]="product.Image" required>
         </div>
 

@@ -6,6 +6,11 @@
     background-color: #a0a0a0;
 }
 
+h3 {
+    text-align: center;;
+    margin-top: 10px;
+}
+
 .product {
     position: relative;
     padding: 30px 10px;

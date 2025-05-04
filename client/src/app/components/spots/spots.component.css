@@ -2,26 +2,34 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 20px;
     position: relative;
     text-align: center;
     color: black;
     justify-content: center;
+    background-color: #ee9f2881;
+    padding: 20px 10px;
+    margin: 0 5px;
 }
 
-.spots img:hover {
+/* .spot:hover {
     transform: scale(1.05);
-}
+} */
 
 .spot {
     position: relative;
     text-align: center;
     color: black;
     font-size: 25px;
-}
-.spot img{
-    max-width: 50vh;
-    height: auto;
+    background-color: #ffffff;
+    border: 2px solid #f0f0f0;
+    box-shadow: 5px 10px #d0d0d0;
+    border-radius: 10px;
+
+    img{
+       max-width: 40vh;
+       height: auto;
+       border-radius: 10px;
+   }
 }
 
 .spot-text {
@@ -30,8 +38,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
+    color: red;
 }
 
 @media screen and (max-width: 1023px) {

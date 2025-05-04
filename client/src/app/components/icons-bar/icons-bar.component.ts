@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faShield } from '@fortawesome/free-solid-svg-icons';
+import { faEarthAmerica } from '@fortawesome/free-solid-svg-icons';
+import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 import { faJetFighter } from '@fortawesome/free-solid-svg-icons';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
 
@@ -13,8 +13,8 @@ import { faSmile } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./icons-bar.component.css']
 })
 export class IconsBarComponent {
-  faGlobe = faGlobe;
-  faShield = faShield;
+  faEarthAmerica = faEarthAmerica;
+  faShieldHalved = faShieldHalved;
   faJetFighter = faJetFighter;
   faSmile = faSmile;
 }
