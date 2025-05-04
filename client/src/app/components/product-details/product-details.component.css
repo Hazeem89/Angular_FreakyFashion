@@ -31,9 +31,15 @@
     cursor: pointer;
 }
 
+.heart-icon:hover {
+    transform: scale(1.5);
+    clip-path: polygon(58% 33%, 69% 29%, 79% 28%, 88% 31%, 94% 36%, 96% 41%, 93% 48%, 83% 56%, 73% 63%, 58% 71%, 45% 64%, 32% 56%, 22% 49%, 19% 42%, 22% 36%, 28% 31%, 37% 28%, 49% 29%);
+    background-color: tomato;
+    
+}
+
 .product-info {
     font-size: 1rem;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: left;
@@ -45,7 +51,6 @@
 .name, .price {
     font-size: 1.1rem;
     color: black;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -65,7 +70,6 @@ button {
     min-width: fit-content;
     min-height: fit-content;
     max-width: 20%;
-    font-family: "Balsamiq Sans", sans-serif;
     font-size: medium;
     font-weight: bold;
 }

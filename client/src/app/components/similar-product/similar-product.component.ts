@@ -26,11 +26,11 @@ export class SimilarProductComponent implements OnInit {
       next: (products) => {
         if (products.length > 0 && this.productName) {
           this.filteredProducts = products
-            .filter(product => 
-              product.Name.toLowerCase().includes(this.productName.toLowerCase()) && 
-              product.id !== this.productId
-            )
-            .slice(0, 3);
+          .filter(product =>
+            product.Name?.toLowerCase().includes(this.productName.toLowerCase()) &&
+            product.id !== Number(this.productId)
+          )
+          .slice(0, 3);
         }
       },
       error: (error) => {

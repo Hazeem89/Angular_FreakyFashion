@@ -24,7 +24,6 @@
 
 .panel-heading, .accordion-text {
     text-decoration: none;
-    font-family: "Balsamiq Sans" sans-serif;
     font-weight: 400;
     font-style: normal;
     color: inherit;
@@ -32,7 +31,6 @@
 }
 
 .accordion-button {
-    font-family: "Balsamiq Sans" sans-serif;
     font-weight: 500;
     font-style: normal;
     background-color: #f0f0f0;

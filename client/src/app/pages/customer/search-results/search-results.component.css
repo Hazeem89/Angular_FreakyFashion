@@ -42,6 +42,14 @@ h3 {
     font-size: 24px;
     color: tomato;
     cursor: pointer;
+    
+}
+
+.heart-icon:hover {
+    transform: scale(1.5);
+    clip-path: polygon(58% 33%, 69% 29%, 79% 28%, 88% 31%, 94% 36%, 96% 41%, 93% 48%, 83% 56%, 73% 63%, 58% 71%, 45% 64%, 32% 56%, 22% 49%, 19% 42%, 22% 36%, 28% 31%, 37% 28%, 49% 29%);
+    background-color: tomato;
+    
 }
 
 .price {
@@ -49,7 +57,6 @@ h3 {
     bottom: 25px;
     right: 15px;
     font-size: 1rem;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -61,7 +68,6 @@ h3 {
     left: 15px;
     font-size: 1.1rem;
     color: black;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -72,7 +78,6 @@ h3 {
     left: 15px;
     font-size: 15px;
     color: rgb(61, 60, 60);
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -87,7 +92,6 @@ h3 {
 
 .no-results h2 {
     color: black;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }

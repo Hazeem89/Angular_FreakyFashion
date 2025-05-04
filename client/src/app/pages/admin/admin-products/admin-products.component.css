@@ -17,7 +17,6 @@
 h3 {
     margin-top: 15px;
     margin-left: 0;
-    font-family: "Balsamiq Sans", sans-serif;
     font-weight: 700;
     font-size: x-large;
     height: 95%;
@@ -33,7 +32,6 @@ h3 {
     max-width: 20%;
     min-width: fit-content;
     min-height: fit-content;
-    font-family: "Balsamiq Sans", sans-serif;
     font-size: medium;
     font-weight: bold;
 }
@@ -48,7 +46,6 @@ a {
 }
 
 table {
-    font-family: "Balsamiq Sans", sans-serif;
     border-collapse: collapse;
     width: 90%;
     border: 2px solid black;
@@ -58,7 +55,6 @@ table {
 }
 
 th {
-    font-family: "Balsamiq Sans", sans-serif;
     border-collapse: collapse;
     text-align: left;
     background-color: #cccccc;
