@@ -1,0 +1,81 @@
+<nav>
+    <div class="foot-nav">
+        <div class="accordion" id="footerAccordion">
+            <!-- Shopping Section -->
+            <div class="accordion-item panel-default">
+                <h2 class="accordion-header panel-heading">
+                    <button class="accordion-button" type="button" (click)="togglePanel('shopping')" [attr.aria-expanded]="expandedPanels.includes('shopping')" aria-controls="shopping-panel">
+                        Shopping
+                    </button>
+                </h2>
+                <div id="shopping-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('shopping')">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a routerLink="/vinterjackor" class="accordion-text">Vinterjackor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/pufferjackor" class="accordion-text">Pufferjackor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/kappa" class="accordion-text">Kappa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/trenchcoats" class="accordion-text">Trenchcoats</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Pages Section -->
+            <div class="accordion-item panel-default">
+                <h2 class="accordion-header panel-heading">
+                    <button class="accordion-button" type="button" (click)="togglePanel('pages')" [attr.aria-expanded]="expandedPanels.includes('pages')" aria-controls="pages-panel">
+                        Mina Sidor
+                    </button>
+                </h2>
+                <div id="pages-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('pages')">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a routerLink="/mina-ordrar" class="accordion-text">Mina Ordrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/mitt-konto" class="accordion-text">Mitt Konto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Service Section -->
+            <div class="accordion-item panel-default">
+                <h2 class="accordion-header panel-heading">
+                    <button class="accordion-button" type="button" (click)="togglePanel('service')" [attr.aria-expanded]="expandedPanels.includes('service')" aria-controls="service-panel">
+                        Kundtjänst
+                    </button>
+                </h2>
+                <div id="service-panel" class="accordion-collapse collapse" [class.show]="expandedPanels.includes('service')">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a routerLink="/returnpolicy" class="accordion-text">Returnpolicy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/integritetspolicy" class="accordion-text">Integritetspolicy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-mark">
+            <span style="font-size: 15px">
+                <span style="font-size: x-large; font-family: Arial, Helvetica, sans-serif; vertical-align: middle; margin-right: 2px">©</span>
+                Freaky Fashion
+            </span>
+        </div>
+    </div>
+</nav>

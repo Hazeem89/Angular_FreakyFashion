@@ -1,0 +1,35 @@
+<div class="parent"> 
+    <div class="container">
+        <h3>Produkter</h3>
+        <button class="button">
+            <a routerLink="/admin/products/new">Ny produkt</a>
+        </button>
+    </div>
+</div>
+
+<div style="justify-items: center">
+    <table>
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>SKU</th>
+                <th>Märke</th>
+                <th>Pris</th>
+                <th>Antal sålda</th>
+                <th>Åtgärder</th> <!-- New column for actions -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.Name }}</td>
+                <td>{{ product.SKU }}</td>
+                <td>{{ product.Brand }}</td>
+                <td>{{ product.Price }} SEK</td>
+                <td>{{ product.totalSales }}</td>
+                <td>
+                    <button (click)="deleteProduct(product.id)" class="delete-button">Radera</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
